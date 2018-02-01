@@ -1,0 +1,37 @@
+.row{
+    height: 30vh;
+    margin: 5%;
+}
+img{
+    width: 30px;
+    height: 30px;
+  }
+  .col-sm{
+      text-align: center;
+  }
+  a{
+      font-size: 10px;
+      text-decoration: none;
+  }
+  p{
+      transform: translateY(-10%)
+  }
+  h6{
+      padding: 5%;
+  }
+  ul{
+      margin: 0;
+      padding: 0;
+  }
+  li{
+      font-size: 16px;
+  }
+  @media only screen and (max-width: 430px){
+    .row{
+        height: auto;
+        margin: 5%;
+    }
+    .col-sm{
+        padding: 5% auto;
+    }
+}

@@ -1,0 +1,36 @@
+img{
+    max-height: 90%;
+    max-width: 90%;
+    display: block;
+    padding: 5%;
+    margin: 0 5% 
+}
+.content{
+    padding: 5% 10%
+}
+@media only screen and (max-width: 430px){
+    .row{
+      width: 100%;
+      margin: 0;
+      height: auto;
+      background-color: #f7f7f7;
+    }
+    .content{
+      width: 100%;
+      margin: 0;
+      padding: 5% 1%;
+    }
+    .col_1{
+      display: none
+    }
+    .col_2{
+      padding: 5%;
+      width: 100%;
+    }
+    h2{
+        font-size: 36px;
+    }
+    img{
+      display: none
+  }
+}

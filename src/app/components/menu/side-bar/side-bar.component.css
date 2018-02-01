@@ -1,0 +1,23 @@
+.mobile{
+    display: none;
+}
+.sideNav{
+   top: 0; background-color: white; width: 250px; z-index: 1001; height: 100vh; transform: translateX(-100%); margin: 0;position: fixed;border-right: 1px solid;
+}
+.openbtn{
+    margin: 103%;
+}
+.closebtn{
+    margin: 80%;
+}
+li{
+    padding: 5% 0;
+}
+
+@media only screen and (max-width: 430px){
+    .mobile{
+        position: fixed;
+        display: block;
+        z-index: 1;
+    }
+}

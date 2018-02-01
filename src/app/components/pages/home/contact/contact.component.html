@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row" >
+    <div class="col-sm col_1" [@col-1]="animate" >
+      <img src="/assets/icons/pharmacy-location.png" alt="">
+      <p>103 Ridgedale Ave</p>
+      <p>Cedar Knolls, NJ 07927</p>
+      <button class="btn btn-sm" type="button" name="button" data-toggle="modal" data-target="#drivingDirections">Driving Directions</button>
+    </div>
+    <div class="col-sm col_2" [@col-2]="animate"> 
+        <a href="tel:9735387687">
+          <img src="/assets/icons/phone.png" alt="">
+          <h6>(973) 538-6787</h6>
+        </a>
+    </div>
+    <div class="col-sm col_3" [@col-3]="animate">
+      <img src="/assets/icons/calendar.svg" alt="">
+      <ul>
+        <li>Monday - Thursday</li>
+        <li>9AM - 8PM</li>
+        <li>Friday</li>
+        <li>9AM - 7PM</li>
+        <li>Saturday</li>
+        <li>9AM - 4PM</li>
+        <li>Sunday</li>
+        <li>9AM - 12PM</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- DRIVING DIRECTIONS MODAL======================================== -->
+<div class="modal fade" id="drivingDirections" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12077.380082226035!2d-74.45345129632568!3d40.82038471012233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdba44e701a07c28!2sTowne+Pharmacy!5e0!3m2!1sen!2sus!4v1497969288247"
+          width="860" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-md" href="https://www.google.com/maps/place/Towne+Pharmacy/@40.820677,-74.449546,15z/data=!4m5!3m4!1s0x0:0xcdba44e701a07c28!8m2!3d40.820677!4d-74.449546">Navigate</a>
+        <button type="button" class="btn btn-md" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- DRIVING DIRECTIONS MODAL======================================== -->

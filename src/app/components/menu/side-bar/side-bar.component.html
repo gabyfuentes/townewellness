@@ -1,0 +1,14 @@
+<div class="mobile">
+  <div id="sideNav" class="sideNav" [@openSideBar]='state'>
+    <a id="open" (click)="openSideBar()" class='openbtn' >
+      <img src="/assets/icons/menu.png" alt="openMenu">
+    </a>
+    <div class="">
+      <ul (click)="openSideBar()">
+        <li routerLink="/home">Home</li>
+        <li routerLink="/our-pharmacy">Our Pharmacy</li>
+        <li routerLink="/services">Services</li> 
+      </ul>
+    </div>
+  </div>
+</div>

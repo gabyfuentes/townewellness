@@ -1,0 +1,32 @@
+.content{
+    padding: 5% 10%
+}
+img{
+    max-height: 90%;
+    max-width: 90%;
+    display: block;
+    padding: 5%;
+    margin: 0 5% 
+}
+@media only screen and (max-width: 430px){
+    .row{
+      width: 100%;
+      margin: 0;
+      height: auto;
+    }
+    .content{
+      width: 100%;
+      margin: 0;
+      padding: 5% 1%;
+    }
+    .col_2{
+      display: none
+    }
+    .col_1{
+      padding: 5%;
+      width: 100%;
+    }
+    img{
+      display: none
+  }
+  }

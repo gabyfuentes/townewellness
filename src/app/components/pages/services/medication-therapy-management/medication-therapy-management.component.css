@@ -1,0 +1,33 @@
+.imgBack{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 70vh;
+    width: 100%
+  }
+  .row{
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .content{
+    padding: 10%;
+  }
+  ul{
+    list-style: square;
+  }
+  @media only screen and (max-width: 430px){
+    .row{
+      width: 100%;
+      margin: 0;
+      height: auto;
+    }
+    .content{
+      width: 100%;
+      margin: 0;
+      padding: 5% 1%;
+    }
+    img{
+      display: none
+  }
+  }
