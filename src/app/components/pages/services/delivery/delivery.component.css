@@ -11,6 +11,11 @@ img{
 .col-6{
     margin: 0%;
 }
+@media only screen and (max-width: 770px){
+  img{
+    display: none;
+  }
+}
 @media only screen and (max-width: 430px){
     .row{
       width: 100%;

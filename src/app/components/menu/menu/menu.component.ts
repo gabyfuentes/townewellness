@@ -1,9 +1,6 @@
-import { Component, HostListener, ElementRef, OnInit, Attribute } from '@angular/core';
-import { importExpr } from '@angular/compiler/src/output/output_ast';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { animate, trigger, style, state, transition, stagger, query } from "@angular/animations";
-import { AbstractEmitterVisitor } from '@angular/compiler/src/output/abstract_emitter';
-
-
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +8,7 @@ import { AbstractEmitterVisitor } from '@angular/compiler/src/output/abstract_em
   styleUrls: ['./menu.component.css'],
   animations: [
     trigger('menuAnimation', [
-      transition('*=>*', [
+      transition('void => *', [
         query('li', style({
           transform: 'translateX(70px)',
           opacity: 0
@@ -29,13 +26,27 @@ import { AbstractEmitterVisitor } from '@angular/compiler/src/output/abstract_em
 })
 export class MenuComponent implements OnInit {
 
-  menu = [
-    'home',
-    'our pharmacy',
-    'services'
-  ]
-  constructor(private el: ElementRef) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
+mycolor = 'black'
+
+changeStyle(){
+  if(isPlatformBrowser(this.platformId)){
+    let path = window.location.pathname
+    switch(path){
+      case '/team':
+      this.mycolor = 'white';
+      break;
+      case '/our-pharmacy':
+      this.mycolor = 'white';
+      break;
+      default:
+      this.mycolor = 'black';
+    }
+    return this.mycolor
+  }
+  
+}
   ngOnInit() {
   }
 

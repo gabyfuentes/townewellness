@@ -1,7 +1,23 @@
-<div id="menu" [@menuAnimation]>
-  <ul>
-    <li ><a routerLink="/home">home</a></li>
-    <li><a routerLink="/our-pharmacy">Our Pharmacy</a></li>
-    <li><a routerLink="/services">Services</a></li>
-  </ul>
+<div class="row">
+  <div class="grid-container" id="menu" [@menuAnimation]>
+    <div class="grid-item one">
+      <h4 [ngStyle]="{'color': changeStyle()}">Towne Pharmacy</h4>
+    </div>
+    <div class="grid-item two">
+      <ul>
+        <li>
+          <a routerLink="/home" [ngStyle]="{'color': changeStyle()}">Home</a>
+        </li>
+        <li>
+          <a routerLink="/our-pharmacy" [ngStyle]="{'color': changeStyle()}">Our Pharmacy</a>
+        </li>
+        <li>
+          <a routerLink="/services" [ngStyle]="{'color': changeStyle()}">Services</a>
+        </li>
+        <li>
+          <a routerLink="/contact-us" [ngStyle]="{'color': changeStyle()}">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

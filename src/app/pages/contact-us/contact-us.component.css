@@ -1,0 +1,81 @@
+
+.content{
+    position: absolute;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.grid-container{
+    display: grid;
+    margin: 10%;
+    padding: 0 5%;
+    grid-template-columns:45% 45%;
+    grid-gap: 5%;
+
+}
+.child-grid-container2{
+    display: grid;
+    grid-row-gap: 1%;
+    grid-template-rows: 20% 80%;
+}
+.child-grid-item-1{
+    padding: 5% 0;
+    text-align: right;
+}
+.col{
+    margin: 2%;
+    float: left;
+}
+.row{
+    width: 80%; 
+    background-color: #f7f7f7;
+    padding: 10% 0;
+    margin: 0 10%;
+}
+.row-1{
+    background-color: white;
+    
+}
+input, textarea{
+    border: 0;
+}
+form{
+    font-size: 24px;
+}
+input{
+    font-size: 24px;
+}
+@media only screen and (max-width: 780px){
+    .grid-container{
+        display: grid;
+        margin: 5%;
+        padding: 10% 5%;
+        grid-template-columns:100%;
+        grid-gap: 5%;
+    
+    }
+    .child-grid-container2{
+        display: grid;
+        grid-row-gap: 1%;
+        grid-template-rows: 100%;
+    }
+    .content{
+        height: auto;
+    }
+    .form-grou{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 430px){
+    .grid-container{
+        height: auto;
+        margin: 10% 2%;
+        width: 95%;
+        padding: 5%;
+    }
+    label{
+        margin: 0;
+    }
+}

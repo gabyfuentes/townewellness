@@ -1,13 +1,9 @@
-.container-fluid{
-  padding: 0;
-  margin: 0;
-}
+
 .imgBack{
     width: 100%;
     position: absolute;
     top: 0;
     height: 100vh;
-    /*margin: 2% 0 0 0;*/
     z-index: -1;
     object-fit: cover;
   }
@@ -23,59 +19,24 @@
   margin: 0;
   height: 100vh;
 } 
-.row_2{
-  background-color: #f7f7f7;
+.grid-container{
+  display: grid;
+  grid-template-rows: auto;
   width: 100%;
   text-align: center;
-  /* padding: 10% 0; */
-  /* margin: 5% 0; */
 }
-.center{
-  padding: 5% 10%;
+.grid-row{
+  margin: 0 10%;
+  padding: 5% 10%
 }
-.row_2 p{
-  /* opacity: 0; */
-  top: 10px;
-  position: relative;
-
+h2{
+  font-weight: bold;
 }
-.row_2 h3{
-  /* opacity: 0; */
-  top: -10px;
-  position: relative;
+.pair{
+  background: #f7f7f7;
 }
-
-.row_4{
-  width: 100%;
-  /* background-color: #f7f7f7; */
-  height: 30vh;
-  text-align: center;
-  /* padding: 10% auto; */
-  /* margin: 10% auto; */
-}
-.row_4 .content{
-  margin: 5%;
-}
-.row_4 .content h1{
-  /* opacity: 0; */
-  top: 10px;
-  position: relative;
-}
-.row_4 .content p{
-  /* opacity: 0; */
-  top: 10px;
-  position: relative;
-}
-.row_4 .content .btn{
-  /* opacity: 0; */
-  top: 10px;
-  position: relative;
-}
-
-.img{
-  z-index: -1;
-  position: absolute;
-  width: 50%;
+.image{
+  width: 10%;
   height: auto;
 }
 .desktop{
@@ -84,37 +45,23 @@
 .mobile{
   display: none;
 }
-.row_5{
-  height: 50vh;
-  width: auto;
-  text-align: center;
-  background-color: #f7f7f7;
-  
-}
-.row_5 h2, .row_5 p, .row_5 img{
-  /* opacity: 0; */
-  top: 20%;
-  position: relative;
-}
-
-.row_6{
-height: 50vh;
-text-align: center;
-}
-.row_6 h3, .row_6 p, .row_6 a{
-  /* opacity: 0; */
-  top: 20%;
-  position: relative;
-}
-/* .center{
-  margin: 5% auto;
-  width: 50%;
-} */
-.center img{
-  width: 15%;
-  height: 15%;
+@media only screen and (max-width: 770px){
+  .caption-left{
+    margin: 50% 0 50% 35%;
+  }
+  .row{
+    background-color: #bcdcee;
+    
+  }
+ .desktop{
+   display: none;
+ }
+ .grid-row{
+  margin: 0 5%;
+  padding: 5% 15% 5% 10%;
 }
 
+}
 @media only screen and (max-width: 430px) {
 .caption-left{
   text-align: center;
@@ -122,11 +69,29 @@ text-align: center;
   width: 100%;
   margin: 50% 15%;
 }
+h2{
+  font-size: 24px;
+  font-weight: bold;
+}
+p{
+  font-size: 18px;
+}
+button{
+  font-size: 18px;
+}
+.grid-row{
+  margin: 5%;
+  padding: 5%
+}
 .desktop{
   display: none;
 }
 .mobile{
   display: block;
+}
+.image{
+  width: 20%;
+  height: auto;
 }
 
 }

@@ -1,37 +1,67 @@
-.row{
-    height: 30vh;
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2%;
     margin: 5%;
+}
+.grid-item{
+    margin-top: 5%;
+    padding: 5%;
+    text-align: center;
 }
 img{
     width: 30px;
     height: 30px;
-  }
-  .col-sm{
-      text-align: center;
-  }
-  a{
-      font-size: 10px;
-      text-decoration: none;
-  }
-  p{
-      transform: translateY(-10%)
-  }
-  h6{
-      padding: 5%;
+    margin-bottom: 5%;
   }
   ul{
-      margin: 0;
-      padding: 0;
-  }
-  li{
-      font-size: 16px;
-  }
-  @media only screen and (max-width: 430px){
-    .row{
-        height: auto;
+    margin: 0;
+    padding: 0;
+}
+@supports not (display: grid){
+    .grid-container{
+        display: block;
+        width: 90%;
         margin: 5%;
     }
-    .col-sm{
-        padding: 5% auto;
+}
+
+  @media only screen and (max-width: 770px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1%;
+        margin: 5% 10%;
+        width: 80%;
     }
+    @supports not (display: grid){
+        .grid-container{
+            display: inline-block;
+            width: calc(50% - 20px);
+            margin: 5%;
+        }
+    }
+  }
+  @media only screen and (max-width: 430px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 2%;
+        margin: 5% 5% 5% 10%;
+    }
+    .grid-item{
+        margin-top: 5%;
+        padding: 5%;
+        text-align: center;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5%;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+    }
+   
 }

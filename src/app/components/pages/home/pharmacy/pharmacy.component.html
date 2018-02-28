@@ -1,17 +1,19 @@
-<div class="ourPharmacy">
-  <div class="col-md-12 col-xs-12">
-    <div #pharmacy class="content container">
-      <h2 [@h2]='animate'>Our Pharmacy</h2>
-      <div [@p]='animate' class="paragraph">
-        <p>Here, at Towne Pharmacy, we truly believe in patient centered care and gear our customer service in ways that improve
-          patient health.</p>
-        <p>Towne Pharmacy is a traditional retail pharmacy that also services several long-term care clients, adult day care
-          centers, and hospice facilities.</p>
-        <p>Our rich history in serving patients has placed us as one of the reputable and trustworthy pharmacies in the area
-          and we continue to reciprocate this trust by providing patients with services such as free delivery, compounding,
-          compliance packaging, immunizations, medicare plan consulting, and Medication Therapy Management (MTM).</p>
+<div class="row">
+    <img class="imgBack desktop" src="/assets/images/Towne-Pharmacy-compound.jpg" alt="">
+    <div class="col-lg-6 col-md-12">
+      <div [@box]='animate'class="box desktop"></div>
+      <div class="content">
+          <h2 [@h2]='animate'><strong>Our Pharmacy</strong></h2>
+          <div [@p]='animate' class="paragraph">
+            <p>Here, at Towne Pharmacy, we truly believe in patient centered care and gear our customer service in ways that improve
+              patient health.</p>
+            <!-- <p>Towne Pharmacy is a traditional retail pharmacy that also services several long-term care clients, adult day care
+              centers, and hospice facilities.</p>
+            <p>Our rich history in serving patients has placed us as one of the reputable and trustworthy pharmacies in the area
+              and we continue to reciprocate this trust by providing patients with services such as free delivery, compounding,
+              compliance packaging, immunizations, medicare plan consulting, and Medication Therapy Management (MTM).</p> -->
+          </div>
+          <button [@button]='animate' class="btn btn-md" type="button" name="button" routerLink="/our-pharmacy">Learn more</button>
       </div>
-      <button [@button]='animate' class="btn btn-sm" type="button" name="button" routerLink="/our-pharmacy">Learn more about us</button>
     </div>
   </div>
-</div>

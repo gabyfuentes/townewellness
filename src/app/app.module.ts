@@ -2,7 +2,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -17,18 +16,12 @@ import { SideBarComponent } from './components/menu/side-bar/side-bar.component'
 import { CarouselComponent } from './components/pages/home/carousel/carousel.component';
 import { MenuComponent } from './components/menu/menu/menu.component';
 import { ContactComponent } from './components/pages/home/contact/contact.component';
-import { OurPharmacyComponent } from './pages/our-pharmacy/our-pharmacy.component';
 import { PharmacyComponent } from './components/pages/home/pharmacy/pharmacy.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { LongTermCareComponent } from './components/pages/services/long-term-care/long-term-care.component';
-import { CompliancePackingComponent } from './components/pages/services/compliance-packing/compliance-packing.component';
-import { CorporateAccountsComponent } from './components/pages/services/corporate-accounts/corporate-accounts.component';
-import { ImmunizationComponent } from './components/pages/services/immunization/immunization.component';
 import { DeliveryComponent } from './components/pages/services/delivery/delivery.component';
-import { HospiceCareComponent } from './components/pages/services/hospice-care/hospice-care.component';
-import { MedicareConsultationComponent } from './components/pages/services/medicare-consultation/medicare-consultation.component';
-import { RemindersComponent } from './components/pages/services/reminders/reminders.component';
-import { MedicationTherapyManagementComponent } from './components/pages/services/medication-therapy-management/medication-therapy-management.component'
+import { FooterComponent } from './components/menu/footer/footer.component';
+
+import { HomeServiceComponent } from './components/pages/home/home-service/home-service.component';
+
 
 firebase.initializeApp(config.firebaseConfig);
 
@@ -41,33 +34,21 @@ firebase.initializeApp(config.firebaseConfig);
     CarouselComponent,
     MenuComponent,
     ContactComponent,
-    OurPharmacyComponent,
     PharmacyComponent,
-    ServicesComponent,
-    LongTermCareComponent,
-    CompliancePackingComponent,
-    CorporateAccountsComponent,
-    ImmunizationComponent,
     DeliveryComponent,
-    HospiceCareComponent,
-    MedicareConsultationComponent,
-    RemindersComponent,
-    MedicationTherapyManagementComponent
-
-
+    FooterComponent,
+    HomeServiceComponent 
   ],
   imports: [
     AngularFireModule.initializeApp(config.firebaseConfig),
     BrowserModule.withServerTransition({appId: 'towne-wellness'}),
-    HttpModule,
     FormsModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

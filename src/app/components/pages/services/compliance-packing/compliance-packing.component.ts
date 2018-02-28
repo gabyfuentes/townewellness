@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject, HostListener} from '@angular/core';
+import { isPlatformBrowser} from '@angular/common';
 
 @Component({
   selector: 'app-compliance-packing',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompliancePackingComponent implements OnInit {
 
-  constructor() { }
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    
+  }
+
+  
   ngOnInit() {
+
   }
 
 }

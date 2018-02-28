@@ -1,19 +1,30 @@
-#menu{
-    position: absolute;
-    top:20px;
-    width:100%; 
-    background-color:transparent;
-    z-index:9999;
+.grid-container{
+	position: absolute;
+	top:20px;
+    width: 90%;
+    padding: 2% 0;
     margin: 0 5%;
+    display: grid;
+	grid-template-columns: 20% 80%; 
+	background-color:transparent;
+	z-index:9999;
 }
 ul{
-    display: inline;
+	display: inline;
+	list-style: none;
 }
+.one{
+	text-align: left;
+}
+.two{
+	text-align: right;
+}
+
 li{
 	position: relative;
-	display: inline-block;
+	display: inline;
 	padding: 0 2%;
-  font-size: 24px; 
+  	font-size: 24px; 
 }
 a{
 	text-decoration: none;
@@ -25,13 +36,38 @@ a{
 	transition: 0.4s ease-in-out;
 }
 a:hover{
-border-top: 1px solid black;
+	
+	border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 6px 0; 
-  color: black
+  /* color: black */
 }
-@media only screen and (max-width: 430px){
-	#menu{
+@media only screen and (max-width: 770px){
+	.one{
+		display: none;
+	}
+	.grid-container{
+
+		grid-template-columns: 100%;
+		text-align: center;
+		width: 75%;
+	}
+	ul{
+		padding: 0;
+	}
+	.tow{
+		width: 100%;
+	}
+	li a{
+		font-size: 20px; 
+	}
+	h4{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.row{
 		display: none;
 	}
 }

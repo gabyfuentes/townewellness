@@ -14,8 +14,8 @@ import { animate, trigger, style, state, transition} from '@angular/animations';
         transform: 'translateX(-100%)'
       }
       )),
-      transition('show => hide', animate('0.5s ease-out')),
-      transition('hide => show', animate('0.5s ease-out')),
+      transition('show => hide', animate('0.3s ease-out')),
+      transition('hide => show', animate('0.3s ease-out')),
     ])
   ]
 })

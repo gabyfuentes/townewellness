@@ -40,8 +40,20 @@ import {trigger, animate, style, transition, query, state } from '@angular/anima
         transform: 'translateY(20%)'
       })),
       transition('hide=>show', animate('1.2s ease-out')),
-      transition('show=>hide', animate('0.5s ease-out'))
+      transition('show=>hide', animate('0.7s ease-out'))
     ]),
+    trigger('col-4', [
+      state('show', style({
+        opacity: 1,
+        transform: 'translateY(0)'
+      })),
+      state('hide', style({
+        opacity: 0,
+        transform: 'translateY(20%)'
+      })),
+      transition('hide=>show', animate('1.5s ease-out')),
+      transition('show=>hide', animate('0.5s ease-out'))
+    ])
   ]  
 })
 export class ContactComponent implements OnInit {
@@ -51,8 +63,8 @@ animate = 'hide';
 
   @HostListener('window:scroll', ['$event'])
   onscroll(){
-    const scrollPosition = window.pageYOffset
-    if(scrollPosition > 200){
+    const scrollPosition = window.pageYOffset + 800
+    if(scrollPosition > screen.height){
       this.animate = 'show'
     }else{
       this.animate = 'hide'
@@ -60,7 +72,6 @@ animate = 'hide';
   }
 
   ngOnInit() {
-    
   }
 
 }

@@ -9,13 +9,12 @@ import { Meta, Title } from '@angular/platform-browser'
 })
 export class HomeComponent implements OnInit {
 
-style: any;
   constructor(meta: Meta, title: Title) { 
-    title.setTitle('Towne Pharmacy');
+    title.setTitle('Towne Pharmacy - Independent Pharmacy in Cedar Knolls, NJ');
     meta.addTags([
-      { name: 'author', content: 'towne Pharmacy'},
-      { name: 'keywords', content: 'Pharmacy'},
-      { name: 'description', content: 'Towne pharmacy is an independent pharmacy in cedar knolls, NJ'}
+      { name: 'author', content: 'Towne Pharmacy'},
+      { name: 'keywords', content: 'Pharmacy, Cedar Knolls, 07927, New Jersey, NJ, Township of Hanover, Whippany, Randolph, Parsippany, Morristown, Florham Park, Morris Plains, Madison, Chatam, Livingston'},
+      { name: 'description', content: 'Traditional Retail Pharmacy serves Long Term Care Medicine, Nursing Homes, adult day care centers, hospice facilities, Compounding Medicine, Pet Medicine in Cedar Knolls NJ.'}
     ])
   }
 

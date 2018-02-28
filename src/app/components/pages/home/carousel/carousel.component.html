@@ -1,11 +1,73 @@
-<div class="container-fluid">
-  <div class="row">
-    <img class="imgBack desktop" src="/assets/images/Towne-pharmacy-medication-1.jpg" alt="">
-    <img class="imgBack mobile" src="/assets/images/mobile/towne-pharmacy-mobile.jpg" alt="">
-    <div id="caption1" class="caption caption-center">
-      <h1>Towne Pharmacy</h1>
-      <p class="logoP">An independent pharmacy in Cedar Knolls, NJ</p>
-      <button class="btn btn-sm" ty pe="button" name="button" routerLink="/our-pharmacy">Learn More About Us</button>
+<div id="carousel-fade" class="carousel carousel-fade" data-pause="false" data-ride="carousel" data-interval="7000">
+  <!-- INDICATORS=================================== -->
+  <!-- <ol class="carousel-indicators">
+    <li data-target="#slide1" data-slide-to="0" class="active"></li>
+    <li data-target="#slide2" data-slide-to="1"></li>
+    <li data-target="#slide3" data-slide-to="2"></li>
+    <li data-target="#slide4" data-slide-to="3"></li>
+  </ol> -->
+  <!-- INDICATORS=================================== -->
+
+  <div class="carousel-inner" role="listbox">
+    <div id="slide1" class="carousel-item  active">
+      <img class="imgBack desktop" src="/assets/images/Towne-pharmacy-medication-1.jpg" alt="">
+      <img class="imgBack mobile" src="/assets/images/mobile/towne-pharmacy-mobile.jpg" alt="">
+      <div class="carousel-caption captionCenter">
+        <h1>Towne Pharmacy</h1>
+        <h5 class="logoP">An independent pharmacy in Cedar Knolls, NJ</h5>
+        <button class="btn btn-md" type="button" name="button" routerLink="/our-pharmacy">Read More</button>
+      </div>
     </div>
+    <div id="slide2" class="carousel-item">
+      <img class="imgBack" src="/assets/images/compound.jpg" alt="">
+      <div class="carousel-caption captionLeft">
+        <div class="content">
+          <h1>Compounding</h1>
+          <h5>We create medication tailored to the need of our patients</h5>
+          <a class="btn btn-md" type="button" name="button" href="https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/PharmacyCompounding/ucm339764.htm#what"
+            target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item">
+      <img class="imgBack desktop" src="/assets/images/Towne-pharmacy-medication.jpg" alt="">
+      <img class="imgBack mobile" src="/assets/images/mobile/towne-pharmacy-discounts-mobile.jpg" alt="">
+      <div class="carousel-caption captionRight">
+        <h1>Discounts</h1>
+        <h5>Check our monthly discounts</h5>
+      </div>
+    </div>
+    <div id="slide4" class="carousel-item">
+      <img id="leftImg" class="desktop" src="/assets/images/team/sapan.jpg" alt="">
+      <div class="carousel-caption captionRight">
+        <h1>We are here to help</h1>
+        <h3>Call us and one of our representatives will be happy to assist you.</h3>
+        <a href="tel:9735387687">
+          <img src="/assets/icons/phone.png" alt="">
+        </a>
+        <h4>(973) 538-6787</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTROLS============================ -->
+  <a class="carousel-control-prev" href="#carousel-fade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-fade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- CONTROLS============================ -->
+
+<div id="slide1" class="carousel-item mobile active">
+  <img class="imgBack mobile" src="/assets/images/mobile/towne-pharmacy-mobile.jpg" alt="">
+  <img class="imgBack desktop" src="/assets/images/Towne-pharmacy-medication-1.jpg" alt="">
+  <div class="carousel-caption">
+    <h1>Towne Pharmacy</h1>
+    <h5 class="logoP">An independent pharmacy in Cedar Knolls, NJ</h5>
+    <button class="btn btn-md" type="button" name="button" routerLink="/our-pharmacy">Read More</button>
   </div>
 </div>

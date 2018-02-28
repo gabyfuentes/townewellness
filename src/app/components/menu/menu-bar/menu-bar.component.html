@@ -1,14 +1,23 @@
-<div id="menu-navbar" [@navBar]='state'>
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2" style="font-size: 14px">TOWNE PHARMACY</div>
-          <div class="col-lg-8 col-md-8 col-sm-8">
-              <ul class="menu">
-                  <li><a routerLink="/home">Home</a></li>
-                  <li><a routerLink="/our-pharmacy">Our pharmacy</a></li>
-                  <li><a routerLink="/services">Services</a></li>
-              </ul> 
-          </div>
-      </div>  
-  </div>  
+<div class="row" [@navBar]='state'>
+    <div id="menu-navbar"  class="grid-container">
+        <div class="grid-item one">
+            <h4>Towne Pharmacy</h4>
+        </div>
+        <div class="grid-item two">
+            <ul>
+                <li>
+                    <a routerLink="/home">Home</a>
+                </li>
+                <li>
+                    <a routerLink="/our-pharmacy">Our Pharmacy</a>
+                </li>
+                <li>
+                    <a routerLink="/services">Services</a>
+                </li>
+                <li>
+                    <a routerLink="/contact-us">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

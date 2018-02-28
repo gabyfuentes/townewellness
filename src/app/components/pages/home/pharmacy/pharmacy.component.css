@@ -1,6 +1,68 @@
-.content{
-    padding: 5% 10%;
+.imgBack{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 60%;
+    width: 100%;
+  }
+  col-lg-6{
+    overflow: auto;
+    height: auto;
+    padding: 10%;
+  }
+  .row{
+    height: 60%;
+    margin: 0;
+    padding: 0;
+  }
+  .content{
+    width: 60%;
+    padding: 5% 10% 5% 5%;
+    margin: 15% 20%;
+    height: 60%;
+    z-index: 1;
 }
-.ourPharmacy{
-    background-color: #f7f7f7;
+  .box {
+    width: 60%;
+    padding: 5%;
+    margin: 15% 18%;
+    background-color: white;
+    height: 56%;
+    z-index: -1;
+    position: absolute;
+  }
+  ul{
+    list-style: square;
+  }
+  li{
+    list-style: initial
+  }
+
+@media only screen and (max-width: 430px){
+    .content{
+        padding: 2% 10% 2% 2%;
+        height: auto;
+        margin: 5%;
+    }
+    .row{
+      height: auto;
+      background: #f7f7f7;
+    }
+    h2{
+      font-size: 30px;
+      font-weight: bold;
+    }
+   
+    .desktop{
+      display: none;
+    }
+    .content{
+      text-align: center;
+      width: 80%;
+      padding: 0;
+      margin: 5% 10%;
+      height: auto;
+      z-index: 1;
+  }
+    
 }

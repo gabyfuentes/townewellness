@@ -1,0 +1,94 @@
+.container-fluid{
+    padding: 0;
+    margin: 0;
+  }
+  .icon{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    margin: 25% 35%;
+  }
+  .mobile{
+    display: none;
+  }
+  .carousel,.item,.active{height:100%; top: 0; width:100%}
+  .carousel-inner{height:100%; top: 0; width:100%}
+  .carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+  }
+  .carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+    transition: opacity linear 1s;
+  }
+  .desktop{
+    display: block;
+  }
+  .carousel-caption{
+    top: 30%;
+    color: black;
+  }
+  .captionLeft{
+    left: -10%;
+  }
+  .captionRight{
+    left: 42%;
+  }
+  .imgBack{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    /*margin: 2% 0 0 0;*/
+    z-index: 0;
+    object-fit: cover;
+  }
+  .captiondown{
+    top: 60%;
+    color: White
+  }
+  #leftImg{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    z-index: 0
+  }
+  #slide1{
+    background-color: #f4f9fc
+  }
+  @media only screen and (max-width: 770px){
+    #slide4 .desktop{
+      display: none;
+    }
+    .captionRight{
+      left: 15%;
+    }
+    .captionLeft{
+      left: 15%;
+    }
+  }
+    
+  @media only screen and (max-width: 430px) {
+    .carousel-caption{
+      top: 20%;
+      color: black;
+    }
+    .mobile{
+      display: block;
+    }
+    .desktop{
+      display: none;
+    }
+    h1{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    .captionLeft{
+      left: 10%;
+    }
+    .captionRight{
+      left: 10%;
+    }
+  }

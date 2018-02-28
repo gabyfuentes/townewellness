@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Allow: /home
+Allow: /our-pharmacy
+Allow: /services
+Allow: /contact-us
+Allow: /team

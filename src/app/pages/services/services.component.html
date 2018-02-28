@@ -1,9 +1,126 @@
-<app-long-term-care></app-long-term-care>
-<app-compliance-packing></app-compliance-packing>
-<app-corporate-accounts></app-corporate-accounts>
-<app-immunization></app-immunization>
-<app-delivery></app-delivery>
-<app-medication-therapy-management></app-medication-therapy-management>
-<app-hospice-care></app-hospice-care>
-<app-medicare-consultation></app-medicare-consultation>
-<app-reminders></app-reminders>
+<app-slideshow class="desktop"></app-slideshow>
+<div id="slide1" class="carousel-item mobile">
+    <img class='icon' src="/assets/icons/pharmacy-services.svg" alt="">
+    <div class="carousel-caption">
+      <h1>Services</h1>
+    </div>
+  </div>
+<div class="grid-container">
+    <div class="row">
+        <div class="item1">
+            <img id="img1" src="/assets/images/long-term-care.png" alt="">
+        </div>
+        <div class="item2 pair">
+            <div class="content-right">
+                <h2>Long Term Care</h2>
+                <p>A variety of services designed to meet a person's health or personal care needs during a short or long period
+                    of time. These services help people live as independently and safely as possible when they can no longer
+                    perform everyday activities on their own.</p>
+                <button routerLink='/long-term-care' class="btn btn-md">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="item1">
+            <div class="content-right">
+                <h2>Compliance Packing</h2>
+                <p>Do you or your family member get confused between the red and blue pill? Or have trouble remembering when
+                    to take the medication?</p>
+                <p>Let us develop your personal medication regimen and take the hassle out of health care!</p>
+                <button routerLink='/compliance-packing' class="btn-md">Learn More</button>
+            </div>
+        </div>
+        <div class="item2">
+            <img id='img1' src="/assets/images/compliance-packing.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="item1">
+            <img id="img2" src="/assets/images/corporate-account.jpg" alt="">
+        </div>
+        <div class="item2 pair">
+            <div class="content-right">
+                <h2>Corporate Accounts</h2>
+                <p>Let us simplify your employees life and take care of all their healthcare needs from prescription items to
+                    over the counter medications.</p>
+                <button routerLink='/corporate-accounts' class="btn btn-md">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="rowFull">
+        <img class="imgBack desktop" src="/assets/images/medication_reminder.jpg" alt="">
+        <div class="row">
+            <div class="item1">
+                <div class="content-right">
+                    <h2>Auto Refills, Reminders and RX Sync</h2>
+                    <p>We sync all your medications for one time quick pick up.</p>
+                    <p>Call us to setup a medication reminder service</p>
+                    <a href="tel:9735387687">
+                        <h4>(973) 538-6787</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="item1 pair">
+            <div class="content-right">
+                <h2>Immunization</h2>
+                <p>At Towne Pharmacy, we aim to improve the overall health of the community.</p>
+                <p>Come to us with your vaccine questions.</p>
+                <p>We immunize all adults and children’s 7 and up.</p>
+                <button routerLink="/immunization" class="btn btn-md">Learn More</button>
+            </div>
+        </div>
+        <div class="item2">
+            <img id='img1' src="/assets/images/immunization.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="item1">
+            <img id="img2" src="/assets/images/hospice-care.jpg" alt="hospice-care">
+        </div>
+        <div class="item2">
+            <div class="content-right">
+                <h2>Hospice Care</h2>
+                <p>Hospice Care At Towne Pharmacy, we take care of patients at all stages of life, especially during the end
+                    of life. We provide care to terminally ill patients and work cooperatively with various hospice facilities
+                    in the area to ensure that patients live comfortably and have a good quality of life during their last
+                    days.
+                </p>
+                <button class="btn btn-md">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="rowFull">
+        <img class="imgBack desktop" src="/assets/images/medication-therapy-management.jpg" alt="">
+        <div class="row">
+            <div class="item1 pair">
+                <div class="content-right">
+                    <h2>
+                        MGM
+                    </h2>
+                    <p>Medication Therapy Management</p>
+                    <div class="paragraph">
+                        <p>Here, at Towne Pharmacy, we truly believe in patient centered care and gear our customer service
+                            in ways that improve patient health.</p>
+                    </div>
+                    <button  class="btn btn-md" type="button" name="button" routerLink="/medication-therapy-management">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="item1">
+            <img id="img2" src="/assets/images/medicare-consultation.jpg" alt="">
+        </div>
+        <div class="item2">
+            <div class="content-right">
+                <h2>Medicare Part D Plan Consultation</h2>
+                <p>We can help you pick a plan that is right for you and your medications, provide you with effective cost savings,
+                    and keep us as a preferred pharmacy.</p>
+                <button routerLink="/medicare-consultation" class="btn btn-md">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>

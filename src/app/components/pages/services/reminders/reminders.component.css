@@ -1,35 +1,38 @@
-.imgBack{
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
-  height: 60vh;
-  width: 100%
+.caption{
+  text-align: center;
+  width: 100%;
+  margin-top: 30%;
+  right: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25%;
 }
-.row{
-  height: auto;
-  margin: 0;
-  padding: 0;
+h1{
+  font-weight: bolder;
+  left: -100px;
 }
-.content{
-  padding: 10%;
+
+.content {
+  text-align: center;
+  margin-top: 35%;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+  width: 70%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 500px;
 }
-@media only screen and (max-width: 430px){
-  .row{
-    width: 100%;
-    margin: 0;
-    height: auto;
-    background-color: #f7f7f7;
+@media only screen and (max-width: 440px){
+  .desktop{
+    display: none;
   }
-  .content{
-    width: 100%;
-    margin: 0;
-    padding: 5% 1%;
-  }
- h4{
-   padding: 5%;
-   margin: 0 10%;
- }
-  img{
-    display: none
+  .content {
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 0 5%;
+    width: 90%;
   }
 }
