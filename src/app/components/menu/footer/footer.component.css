@@ -4,7 +4,22 @@
     margin: 0 5%;
     display: grid;
     grid-template-columns: 20% 60% 20%;
+}
+
+@supports not (display: grid){
+    .grid-container{
+        width: 100%;
+        padding: 2% 0;
+        margin: 0 5%;
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+        display: flex;
+        flex-wrap: wrap;
+    }
     
+    .grid-container div:nth-of-type(1) {flex-grow: 1;}
+    .grid-container div:nth-of-type(2) {flex-grow: 5;}
+    .grid-container div:nth-of-type(3) {flex-grow: 1;}
 }
 .row{
     background-color: #f7f7f7;

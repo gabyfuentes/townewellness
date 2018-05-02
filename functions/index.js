@@ -6,11 +6,6 @@ const { enableProdMode } = require('@angular/core');
 const { renderModuleFactory } = require('@angular/platform-server');
 const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./server/main.bundle');
 
-const nodemailer = require('nodemailer');
-const gmailEmail = encodeURIComponent(functions.config().gmail.email);
-const gmailPassword = encodeURIComponent(functions.config().gmail.password);
-const mailTransport = nodemailer.createTransport(`smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
-
 enableProdMode();
 const index = require('fs')
     .readFileSync(path.resolve(__dirname, './dist/index.html'), 'utf8')
@@ -30,6 +25,13 @@ app.get('**', function (req, res) {
 });
 
 exports.ssrapp = functions.https.onRequest(app);
+
+
+// NODE MAILER=======================
+const nodemailer = require('nodemailer');
+const gmailEmail = encodeURIComponent(functions.config().gmail.email);
+const gmailPassword = encodeURIComponent(functions.config().gmail.password);
+const mailTransport = nodemailer.createTransport(`smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
 
 exports.sendContactMessage = functions.firestore.document('contacts/{name}').onWrite(event => {
     const snapshot = event.data.data();

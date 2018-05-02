@@ -9,6 +9,7 @@
     padding: 5%;
     text-align: center;
 }
+
 img{
     width: 30px;
     height: 30px;
@@ -20,25 +21,58 @@ img{
 }
 @supports not (display: grid){
     .grid-container{
-        display: block;
+        height: auto;
         width: 90%;
         margin: 5%;
+        overflow: auto;
+    }
+    .grid-item{
+        float: left;
+        height: 430px;
+        width: calc(30%);
+        padding: 2%;
+        margin: 1%;
+        text-align: center;
+        background-color: #f7f7f7;
     }
 }
 
   @media only screen and (max-width: 770px){
     .grid-container{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-gap: 1%;
-        margin: 5% 10%;
-        width: 80%;
+        margin: 5% 5%;
+        width: 90%;
+        text-align: center;
+    }
+    /* .grid-container{
+        height: auto;
+        width: 90%;
+        margin: 5%;
+        overflow: auto;
+    } */
+    .grid-item{
+        float: left;
+        /* margin-top: 5%; */
+        width: 100%;
+        padding: 2%;
+        text-align: center;
     }
     @supports not (display: grid){
         .grid-container{
-            display: inline-block;
-            width: calc(50% - 20px);
+            height: 50%;
+            width: 90%;
             margin: 5%;
+            overflow: auto;
+        }
+        .grid-item{
+            float: left;
+            /* margin-top: 5%; */
+            width: calc(25%);
+            padding: 2%;
+            text-align: center;
+            font-size: 25%;
         }
     }
   }
@@ -47,7 +81,7 @@ img{
         display: grid;
         grid-template-columns: auto;
         grid-gap: 2%;
-        margin: 5% 5% 5% 10%;
+        margin: 5%;
     }
     .grid-item{
         margin-top: 5%;
@@ -62,6 +96,12 @@ img{
       ul{
         margin: 0;
         padding: 0;
+    }
+    .modal{
+        width: 90%;
+    }
+    iframe{
+        width: 100%;
     }
    
 }

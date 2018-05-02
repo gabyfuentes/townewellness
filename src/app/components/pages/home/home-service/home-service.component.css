@@ -13,6 +13,25 @@
     background-color: #f7f7f7;
 }
 
+@supports not (display: grid){
+    .grid-container{
+        height: auto;
+        width: 90%;
+        margin: 5%;
+        overflow: auto;
+    }
+    .grid-item{
+        float: left;
+        height: 430px;
+        width: calc(30%);
+        padding: 2%;
+        margin: 1%;
+        text-align: center;
+        background-color: #f7f7f7;
+    }
+    
+}
+
 h4{
     font-weight: 700
 }

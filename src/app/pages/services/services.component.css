@@ -12,18 +12,54 @@
     margin: 0 5%;
     text-align: center;
 }
+.imgBack{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 60%;
+    width: 100%;
+}
+  .rowFull{
+    height: 60%;
+    padding: 0;
+    width: 100%;
+    margin: 5% 0;
+  }
+
 @supports not (display: grid){
     .grid-container{
-        display: inline-block;
-        width: calc(50% - 20px)
+        height: auto;
+        width: 100%;
+        margin: 5%;
     }
     .row{
-        display: inline-block;
-        width: calc(50% - 20px);
-        padding: 2% 0;
+        float: left;
+        height: auto;
+        width: 90%;
+        /* padding: 5%; */
         margin: 0 5%;
-        text-align: center;
     }
+    .item{
+        float: left;
+        width: calc(45%);
+    
+    }
+    .imgBack{
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        }
+        .rowFull{
+        position: relative;
+        height: 60%;
+        padding: 0;
+        width: 100%;
+        margin: 5% 0;
+        overflow:hidden;
+        }
+        
 }
 .desktop{
     display: inherit;
@@ -57,19 +93,7 @@ h2{
 h2, p, button{
     margin: 5% 0;
 }
-.imgBack{
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-    height: 60%;
-    width: 100%;
-  }
-  .rowFull{
-    height: 60%;
-    padding: 0;
-    width: 100%;
-    margin: 5% 0;
-  }
+
   .content{
     width: 55%;
     padding: 5%;
