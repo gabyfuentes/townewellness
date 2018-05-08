@@ -21,6 +21,7 @@ import { DeliveryComponent } from './components/pages/services/delivery/delivery
 import { FooterComponent } from './components/menu/footer/footer.component';
 
 import { HomeServiceComponent } from './components/pages/home/home-service/home-service.component';
+import { HomeReviewsComponent } from './components/pages/home/home-reviews/home-reviews.component';
 
 
 firebase.initializeApp(config.firebaseConfig);
@@ -37,7 +38,8 @@ firebase.initializeApp(config.firebaseConfig);
     PharmacyComponent,
     DeliveryComponent,
     FooterComponent,
-    HomeServiceComponent 
+    HomeServiceComponent,
+    HomeReviewsComponent 
   ],
   imports: [
     AngularFireModule.initializeApp(config.firebaseConfig),

@@ -17,7 +17,8 @@ const routes: Routes = [
   { path: 'medicare-consultation', loadChildren: 'app/components/pages/services/medicare-consultation/medicare-consultation.module#MedicareConsultationModule'},
   { path: 'medication-therapy-management', loadChildren: 'app/components/pages/services/medication-therapy-management/medication-therapy-management.module#MedicationTherapyManagementModule'},
   { path: 'medication-reminders', loadChildren: 'app/components/pages/services/reminders/reminders.module#RemindersModule'},
-  { path: 'instagram', loadChildren: 'app/pages/instagram/instagram.module#InstagramModule'}
+  { path: 'instagram', loadChildren: 'app/pages/instagram/instagram.module#InstagramModule'},
+  { path: 'reviews', loadChildren: 'app/pages/reviews/reviews.module#ReviewsModule'}
 ];
 
 @NgModule({
